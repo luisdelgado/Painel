@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Main msg="Welcome to Your Vue.js App"/>
+    <img alt="Elefante logo" src="./assets/main.jpg">
+    <Main msg="Bem-vindo ao Elefante de Olinda"/>
   </div>
 </template>
 
@@ -22,7 +22,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #A81317;
+}
+
+#app img {
+  max-width: 100%;
 }
 </style>
