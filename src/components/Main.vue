@@ -5,11 +5,15 @@
       O Clube Carnavalesco Misto Elefante de Olinda foi fundado em 12 de fevereiro de 1952.<br>
       Nosso hino é o hino extraoficial de Olinda.
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
+    <h3>Hino do Elefante de Olinda (Olinda Nº2)</h3>
+    <div class="row col-lg-12">
+      <div class="col-lg-6">
+        teste
+      </div>
+      <div class="col-lg-6">
+        teste
+      </div>
+    </div>
     <h3>Essential Links</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
