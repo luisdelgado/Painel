@@ -7,7 +7,7 @@
     </p>
     <h3>Hino do Elefante de Olinda (Olinda Nº2)</h3>
     <div class="row col-lg-12 hymn">
-      <div class="col-lg-4 offset-2">
+      <div v-bind:class="{'col-lg-4': true, 'offset-2' : true}">
         <p><i>Ao som dos clarins de Momo<br>
         O povo aclama com todo ardor<br>
         O Elefante exaltando as suas tradições<br>
