@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Main msg="Elefante de Olinda"/>
+    <Main msg="CCM Elefante de Olinda"/>
   </div>
 </template>
 
