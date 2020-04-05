@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Elefante logo" src="./assets/main.jpg">
-    <Main msg="Bem-vindo ao Elefante de Olinda"/>
+    <Main msg="Elefante de Olinda"/>
   </div>
 </template>
 
@@ -23,9 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #A81317;
-}
-
-#app img {
-  max-width: 100%;
 }
 </style>

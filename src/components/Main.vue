@@ -1,13 +1,23 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <nav class="navbar">
+      <ul class="items">
+        <li>
+          <img alt="Elefante logo" src="./../assets/logo.jpg">
+        </li>
+        <li class="title">
+          <h1>{{ msg }}</h1>
+        </li>
+      </ul>
+    </nav>
+    <img alt="Elefante parade" src="./../assets/main.jpg" class="parade">
     <p>
       O Clube Carnavalesco Misto Elefante de Olinda foi fundado em 12 de fevereiro de 1952.<br>
       Nosso hino é o hino extraoficial de Olinda.
     </p>
     <h3>Hino do Elefante de Olinda (Olinda Nº2)</h3>
-    <div class="row col-lg-12 hymn">
-      <div v-bind:class="{'col-lg-4': true, 'offset-2' : true}">
+    <div v-bind:class="{'row': tabletScreen > 1024, 'col-lg-12': true, 'hymn': true}">
+      <div v-bind:class="{'col-lg-4': tabletScreen > 1024, 'offset-2' : tabletScreen > 1024}">
         <p><i>Ao som dos clarins de Momo<br>
         O povo aclama com todo ardor<br>
         O Elefante exaltando as suas tradições<br>
@@ -24,7 +34,7 @@
         Salve o teu Carnaval!</i></p>
         <p>Clídio Nigro / Clóvis Vieira</p>
       </div>
-      <div class="col-lg-4 sound">
+      <div v-bind:class="{'col-lg-4': tabletScreen > 1024, 'sound': true}">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
@@ -54,6 +64,11 @@ export default {
   name: 'Main',
   props: {
     msg: String
+  },
+  data() {
+    return {
+       tabletScreen: window.innerWidth
+    }
   }
 }
 </script>
@@ -74,9 +89,33 @@ li {
 a {
   color: #42b983;
 }
+
+.navbar {
+  margin-top: 1%;
+}
+
+.items {
+  display:table-row;
+}
+
+li {
+  vertical-align: middle;
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.parade {
+  max-width: 100%;
+}
+
 .hymn {
   margin-top: 3%;
 }
+
 .sound {
   margin-top: 2%;
 }
