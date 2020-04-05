@@ -16,8 +16,8 @@
       Nosso hino é o hino extraoficial de Olinda.
     </p>
     <h3>Hino do Elefante de Olinda (Olinda Nº2)</h3>
-    <div v-bind:class="{'row': tabletScreen > 1024, 'col-lg-12': true, 'hymn': true}">
-      <div v-bind:class="{'col-lg-4': tabletScreen > 1024, 'offset-2' : tabletScreen > 1024}">
+    <div v-bind:class="{'row': widthScreen > 1024, 'col-lg-12': true, 'hymn': true}">
+      <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'offset-2' : widthScreen > 1024}">
         <p><i>Ao som dos clarins de Momo<br>
         O povo aclama com todo ardor<br>
         O Elefante exaltando as suas tradições<br>
@@ -34,7 +34,7 @@
         Salve o teu Carnaval!</i></p>
         <p>Clídio Nigro / Clóvis Vieira</p>
       </div>
-      <div v-bind:class="{'col-lg-4': tabletScreen > 1024, 'sound': true}">
+      <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'sound': true, 'smart': widthScreen <= 414}">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
@@ -67,7 +67,7 @@ export default {
   },
   data() {
     return {
-       tabletScreen: window.innerWidth
+       widthScreen: window.innerWidth
     }
   }
 }
@@ -118,5 +118,9 @@ li {
 
 .sound {
   margin-top: 2%;
+}
+
+.smart iframe {
+  max-width: 100%;
 }
 </style>
