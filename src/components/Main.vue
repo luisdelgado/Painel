@@ -15,10 +15,10 @@
       <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'description': true, 'offset-4' : widthScreen > 1024}">
         <p>
           O Clube Carnavalesco Misto Elefante de Olinda foi fundado em 12 de fevereiro de 1952. Desde 
-          então o Elefante nunca deixou de desfilar no carnaval. O frevo Olinda Nº2 é o Hino do Elefante e 
-          o hino extraoficial de Olinda. O Desfile Oficial ocorre no domingo de carnaval às 19h e o Trote 
-          do Elefante acontece no sábado, 15 dias antes do carnaval, no mesmo horário. O Baile Encarnado 
-          acontece nos meses finais do ano. Os eventos são gratuitos.
+          então o Elefante nunca deixou de desfilar no carnaval. O frevo Marcha Olinda Nº2 - Hino do 
+          Elefante (1954) é o hino extraoficial de Olinda. O Desfile Oficial ocorre no domingo de 
+          carnaval às 19h e o Trote do Elefante acontece no sábado, 15 dias antes do carnaval, no mesmo 
+          horário. O Baile Encarnado acontece nos meses finais do ano. Todos os eventos são gratuitos.
         </p>
       </div>
     </div>
