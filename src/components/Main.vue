@@ -14,14 +14,15 @@
     <div class="col-lg-12">
       <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'description': true, 'offset-4' : widthScreen > 1024}">
         <p>
-          O Clube Carnavalesco Misto Elefante de Olinda foi fundado em 12 de fevereiro de 1952. Nosso 
-          hino é o hino extraoficial de Olinda. O Desfile Oficial do Elefante ocorre no domingo de 
-          carnaval às 19h e o Trote do Elefante acontece no sábado, 15 dias antes do carnaval, no mesmo 
-          horário. O Baile Encarnado acontece no fim de novembro. Todos os eventos são gratuitos.
+          O Clube Carnavalesco Misto Elefante de Olinda foi fundado em 12 de fevereiro de 1952. Desde 
+          então o Elefante nunca deixou de desfilar no carnaval. O frevo Olinda Nº2 é o Hino do Elefante e 
+          o hino extraoficial de Olinda. O Desfile Oficial ocorre no domingo de carnaval às 19h e o Trote 
+          do Elefante acontece no sábado, 15 dias antes do carnaval, no mesmo horário. O Baile Encarnado 
+          acontece nos meses finais do ano. Os eventos são gratuitos.
         </p>
       </div>
     </div>
-    <h3>Hino do Elefante de Olinda (Olinda Nº2)</h3>
+    <h3>Hino do Elefante de Olinda</h3>
     <div v-bind:class="{'row': widthScreen > 1024, 'col-lg-12': true, 'hymn': true}">
       <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'offset-2' : widthScreen > 1024}">
         <p><i>Ao som dos clarins de Momo<br>
@@ -131,6 +132,7 @@ li {
 .description p {
   color: white;
   margin-bottom: 0px;
+  text-align: justify;
 }
 
 .hymn {
