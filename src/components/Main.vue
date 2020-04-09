@@ -47,14 +47,22 @@
           allowfullscreen></iframe>
       </div>
     </div>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
+    <div class="time">
+      <h3>O Elefante e o tempo</h3>
+      <div class="row col-lg-12 time justify-content-center">
+        <img src="./../assets/1953.jpg" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <img src="./../assets/nino.jpg" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
     <h3>Ecosystem</h3>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
@@ -145,5 +153,30 @@ li {
 
 .smart iframe {
   max-width: 100%;
+}
+
+.time {
+  background-color: #A81317;
+  color: white;
+  padding-top: 0.5%;
+  padding-bottom: 3%;
+}
+
+.time img {
+  margin-top: 5%;
+  border: 2px solid white;
+  border-radius: 10px;
+  max-width: 15%;
+  max-height: 20vh;
+  margin-right: 1%;
+}
+
+.time iframe {
+  margin-top: 5%;
+  border: 2px solid white;
+  border-radius: 10px;
+  max-width: 15%;
+  max-height: 20vh;
+  margin-right: 1%;
 }
 </style>
