@@ -159,11 +159,12 @@ li {
   background-color: #A81317;
   color: white;
   padding-top: 0.5%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
+  margin-top: 2.5%;
 }
 
 .time img {
-  margin-top: 5%;
+  margin-top: 1%;
   border: 2px solid white;
   border-radius: 10px;
   max-width: 15%;
@@ -172,7 +173,7 @@ li {
 }
 
 .time iframe {
-  margin-top: 5%;
+  margin-top: 1%;
   border: 2px solid white;
   border-radius: 10px;
   max-width: 15%;
