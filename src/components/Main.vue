@@ -47,18 +47,18 @@
           allowfullscreen></iframe>
       </div>
     </div>
-    <div class="time">
-      <h3>O Elefante e o tempo</h3>
-      <div class="row col-lg-12 time justify-content-center">
-        <img src="./../assets/1953.jpg" />
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
+    <div class="gallery">
+      <h3>Galeria</h3>
+      <div class="row col-lg-12 justify-content-between gallery-time">
+        <img class="col-lg-2 first-gallery-item gallery-item" src="./../assets/1953.jpg" />
+        <iframe class="col-lg-2 gallery-item" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
+        <iframe class="col-lg-2 gallery-item" width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
-        <img src="./../assets/nino.jpg" />
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
+        <img class="col-lg-2 gallery-item" src="./../assets/nino.jpg" />
+        <iframe class="col-lg-2 gallery-item" width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
       </div>
@@ -155,29 +155,29 @@ li {
   max-width: 100%;
 }
 
-.time {
+.gallery {
   background-color: #A81317;
   color: white;
   padding-top: 0.5%;
-  padding-bottom: 2%;
-  margin-top: 2.5%;
+  padding-bottom: 3%;
+  margin-top: 2%;
 }
 
-.time img {
+.gallery-time {
+  padding-top: 1%;
+}
+
+.first-gallery-item {
+  margin-left: 3%;
+}
+
+.gallery-item {
   margin-top: 1%;
   border: 2px solid white;
   border-radius: 10px;
-  max-width: 15%;
-  max-height: 20vh;
   margin-right: 1%;
-}
-
-.time iframe {
-  margin-top: 1%;
-  border: 2px solid white;
-  border-radius: 10px;
-  max-width: 15%;
-  max-height: 20vh;
-  margin-right: 1%;
+  max-height: 120px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 </style>
