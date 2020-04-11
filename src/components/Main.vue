@@ -49,16 +49,16 @@
     </div>
     <div class="gallery">
       <h3>Galeria</h3>
-      <div class="row col-lg-12 justify-content-between gallery-time">
-        <img class="col-lg-2 first-gallery-item gallery-item" src="./../assets/1953.jpg" />
-        <iframe class="col-lg-2 gallery-item" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
+      <div v-bind:class="{'gallery-time': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
+        <img v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" src="./../assets/1953.jpg" />
+        <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
           frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
-        <iframe class="col-lg-2 gallery-item" width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
+        <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
-        <img class="col-lg-2 gallery-item" src="./../assets/nino.jpg" />
-        <iframe class="col-lg-2 gallery-item" width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
+        <img v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" src="./../assets/nino.jpg" />
+        <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
       </div>
@@ -167,6 +167,10 @@ li {
   padding-top: 1%;
 }
 
+.gallery-time img {
+  vertical-align: baseline;
+}
+
 .first-gallery-item {
   margin-left: 3%;
 }
@@ -179,5 +183,9 @@ li {
   max-height: 120px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.smart-gallery {
+  max-width: 240px;
 }
 </style>
