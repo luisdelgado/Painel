@@ -51,7 +51,8 @@
     </div>
     <h3>Galeria</h3>
     <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
-      <img v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" src="./../assets/1953.jpg" />
+      <img v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" 
+        v-b-tooltip.hover title="Fonte: Facebook/Olinda de Antigamente" src="./../assets/1953.jpg" />
       <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
