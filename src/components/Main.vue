@@ -70,6 +70,7 @@
         <a href="https://www.facebook.com/clubeelefantedeolindah"><img v-bind:class="{'follow': true}" src="./../assets/facebook.png" /></a>
         <a href="https://twitter.com/ElefanteOlinda"><img v-bind:class="{'follow': true}" src="./../assets/twitter.png" /></a>
         <a href="https://open.spotify.com/user/akua0hpd92ev9ieirigd0fmqy?si=z8KuWZ2sSzavGAkV9iy4vw"><img v-bind:class="{'follow': true}" src="./../assets/spotify.jpg" /></a>
+        <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow': true}" src="./../assets/youtube.png" /></a>
       </div>
     </div>
   </div>
