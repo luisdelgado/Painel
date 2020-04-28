@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <h3>Galeria</h3>
+    <h3>Carnavais Saudosos</h3>
     <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
       <img v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" v-b-tooltip.hover title="Fonte: Facebook/Olinda de antigamente (1953)" src="./../assets/1953.jpg" />
       <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
@@ -64,13 +64,20 @@
       </iframe>
     </div>
     <div class="alternative-section gallery">
-      <h3>Siga o Elefante</h3>
-      <div v-bind:class="{'section-row': true}">
-        <a href="https://instagram.com/elefantedeolinda"><img v-bind:class="{'follow': true}" src="./../assets/instagram.png" /></a>
-        <a href="https://www.facebook.com/clubeelefantedeolindah"><img v-bind:class="{'follow': true}" src="./../assets/facebook.png" /></a>
-        <a href="https://twitter.com/ElefanteOlinda"><img v-bind:class="{'follow': true}" src="./../assets/twitter.png" /></a>
-        <a href="https://open.spotify.com/user/akua0hpd92ev9ieirigd0fmqy?si=z8KuWZ2sSzavGAkV9iy4vw"><img v-bind:class="{'follow': true}" src="./../assets/spotify.jpg" /></a>
-        <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow': true}" src="./../assets/youtube.png" /></a>
+      <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
+        <div v-bind:class="{'section-row': true, 'col-lg-8 justify-content-between': widthScreen > 1024}">
+          <img class="slide" src="./../assets/main.jpg" />
+          <h4 v-bind:class="{'follow': widthScreen > 1024}" class>Siga o Elefante</h4>
+          <a href="https://instagram.com/elefantedeolinda"><img v-bind:class="{'follow-midia': true}" src="./../assets/instagram.png" /></a>
+          <a href="https://www.facebook.com/clubeelefantedeolindah"><img v-bind:class="{'follow-midia': true}" src="./../assets/facebook.png" /></a>
+          <a href="https://twitter.com/ElefanteOlinda"><img v-bind:class="{'follow-midia': true}" src="./../assets/twitter.png" /></a>
+          <a href="https://open.spotify.com/user/akua0hpd92ev9ieirigd0fmqy?si=z8KuWZ2sSzavGAkV9iy4vw"><img v-bind:class="{'follow-midia': true}" src="./../assets/spotify.jpg" /></a>
+          <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow-midia': true}" src="./../assets/youtube.png" /></a>
+        </div>
+        <div v-bind:class="{'section-row': true, 'col-lg-4 justify-content-between listen': widthScreen > 1024}">
+          <h4>Ouça o Elefante no Spotify</h4>
+          <iframe src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -194,12 +201,29 @@ li {
   max-width: 240px;
 }
 
+.slide {
+  max-width: 80%;
+  max-height: 300px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+}
+
 .follow {
+  margin-top: 30px;
+}
+
+.follow-midia {
   width: 50px;
   height: 50px;
   border-radius: 10px;
   margin-top: 1%;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.listen {
+  text-align: left;
 }
 </style>
