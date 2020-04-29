@@ -63,10 +63,46 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
     </div>
-    <div class="alternative-section gallery">
-      <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
-        <div v-bind:class="{'section-row': true, 'col-lg-8 justify-content-between': widthScreen > 1024}">
-          <img class="slide" src="./../assets/main.jpg" />
+    <div class="alternative-section midia">
+      <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-center': widthScreen > 1024}">
+        <div v-bind:class="{'col-lg-6 offset-1': widthScreen > 1024}">
+          <div v-bind:class="{'slide-padding': widthScreen <= 1024}">
+            <b-carousel
+              v-model="slide"
+              :interval="4000"
+              controls
+              indicators
+              background="#ababab"
+              img-width="100%"
+              img-height="290"
+              style="text-shadow: 1px 1px 2px #333;"
+              @sliding-start="onSlideStart"
+              @sliding-end="onSlideEnd"
+            >
+              <b-carousel-slide>
+                <template v-slot:img>
+                  <img
+                    class="d-block w-80"
+                    width="100%"
+                    height="310"
+                    src="./../assets/main.jpg"
+                    alt="image slot"
+                  >
+                </template>
+              </b-carousel-slide>
+              <b-carousel-slide>
+                <template v-slot:img>
+                  <img
+                    class="d-block w-80"
+                    width="100%"
+                    height="310"
+                    src="./../assets/main.jpg"
+                    alt="image slot"
+                  >
+                </template>
+              </b-carousel-slide>
+            </b-carousel>
+          </div>
           <h4 v-bind:class="{'follow': widthScreen > 1024}" class>Siga o Elefante</h4>
           <a href="https://instagram.com/elefantedeolinda"><img v-bind:class="{'follow-midia': true}" src="./../assets/instagram.png" /></a>
           <a href="https://www.facebook.com/clubeelefantedeolindah"><img v-bind:class="{'follow-midia': true}" src="./../assets/facebook.png" /></a>
@@ -74,7 +110,7 @@
           <a href="https://open.spotify.com/user/akua0hpd92ev9ieirigd0fmqy?si=z8KuWZ2sSzavGAkV9iy4vw"><img v-bind:class="{'follow-midia': true}" src="./../assets/spotify.jpg" /></a>
           <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow-midia': true}" src="./../assets/youtube.png" /></a>
         </div>
-        <div v-bind:class="{'section-row': true, 'col-lg-4 justify-content-between listen': widthScreen > 1024}">
+        <div v-bind:class="{'section-row': true, 'col-lg-4 offset-1 justify-content-between listen': widthScreen > 1024}">
           <h4>Ouça o Elefante no Spotify</h4>
           <iframe src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
@@ -91,7 +127,17 @@ export default {
   },
   data() {
     return {
-       widthScreen: window.innerWidth
+        widthScreen: window.innerWidth,
+        slide: 0,
+        sliding: null
+    }
+  },
+  methods: {
+    onSlideStart() {
+      this.sliding = true
+    },
+    onSlideEnd() {
+      this.sliding = false
     }
   }
 }
@@ -144,6 +190,7 @@ li {
   padding-right: 5%;
   border-radius: 10px;
   padding-bottom: 2.5%;
+  margin-bottom: 40px;
 }
 
 .description p {
@@ -169,10 +216,6 @@ li {
   color: white;
   padding-top: 0.5%;
   padding-bottom: 3%;
-}
-
-.gallery {
-  margin-top: 3%;
 }
 
 .section-row {
@@ -201,9 +244,20 @@ li {
   max-width: 240px;
 }
 
+.midia {
+  margin-top: 3%;
+  padding-top: 3%;
+}
+
+.slide-padding {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 3%;
+  max-height: auto;
+}
+
 .slide {
-  max-width: 80%;
-  max-height: 300px;
+  max-height: 320px;
   border-radius: 10px;
   border-color: white;
   border-style: solid;
