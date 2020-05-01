@@ -147,7 +147,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
+  font: 700 28px Fugaz One !important; 
   margin: 40px 0 0;
+}
+h4 {
+  font: 700 24px Fugaz One !important; 
 }
 ul {
   list-style-type: none;
