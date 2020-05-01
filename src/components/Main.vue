@@ -18,7 +18,8 @@
           então o Elefante nunca deixou de desfilar no carnaval. O frevo Marcha Olinda Nº2 - Hino do 
           Elefante (1954) é o hino extraoficial de Olinda. O Desfile Oficial ocorre no domingo de 
           carnaval às 19h e o Trote do Elefante acontece no sábado, 15 dias antes do carnaval, no mesmo 
-          horário. O Baile Encarnado acontece nos meses finais do ano. Todos os eventos são gratuitos.
+          horário. O Baile Encarnado acontece nos meses finais do ano. Atualmente, quem comanda o frevo
+          nessas ocasiões é a Orquestra do Maestro Oséas. Todos os eventos são gratuitos.
         </p>
       </div>
     </div>
@@ -111,7 +112,7 @@
           <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow-midia': true}" src="./../assets/youtube.png" /></a>
         </div>
         <div v-bind:class="{'section-row': true, 'col-lg-4 offset-1 justify-content-between listen': widthScreen > 1024}">
-          <h4>Ouça o Elefante no Spotify</h4>
+          <h4 class="listen-title">O Elefante é frevo!</h4>
           <iframe src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
@@ -279,5 +280,9 @@ li {
 
 .listen {
   text-align: left;
+}
+
+.listen-title {
+  margin-left: 49px;
 }
 </style>
