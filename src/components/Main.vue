@@ -52,7 +52,39 @@
     </div>
     <h3>Carnavais Saudosos</h3>
     <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
-      <img v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" v-b-tooltip.hover title="Fonte: Facebook/Olinda de antigamente (1953)" src="./../assets/1953.jpg" />
+      <img v-b-modal.modal-1 v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" v-b-tooltip.hover title="Fonte: facebook/Olinda de antigamente" src="./../assets/1953.jpg" />
+      <b-modal 
+        id="modal-1"
+        title="Lá Vem o Elefante de Olinda, exaltando suas tradições... (1953)"
+      >
+        <img class="modal-img" src="./../assets/1953.jpg" />
+        <p class="my-4">
+          Fotografia do ano de 1953, Lá Vem o Elefante de Olinda, exaltando suas tradições...
+          De uma brincadeira de um grupo de rapazes em 1952 surge o que talvez viria a se tornar devido a 
+          sua canção, um dos mais conhecidos Clubes de Olinda. É ele o Elefante de Olinda, tão exaltado na 
+          canção, ao que pouca gente sabe, de nome: "OLINDA N°2" considerada seu hino.
+
+          Em seu livro "Carnavais Olindenses - História e Metamorfose Numa Travessia de Cem Anos - 
+          1907-2007", o professor e historiador Thales Antônio Rodrigues Galhardo transcreve um 
+          depoimento de Carmelo Filizola, um dos fundadores, conta a origem do Elefante:
+
+          "No carnaval de 1950, vínhamos subindo o Bonfim, eu, Expedito (meu irmão), Jojoca, Élcio 
+          Siqueira, Chuquinha Nigro, Auriverton, Walter "melô", Lilo "banana", Nino e Junanci tomando 
+          "umas e outras" nas casas daquela rua. Paramos lá na casa do seu Alfredo para tomar mais 
+          "outra" e provar dos deliciosos filhós de dona Linda, e alguém do grupo teve a brilhante ideia 
+          de pegar o biscuit que decorava a geladeira sendo o objeto a figura de um elefante. Então 
+          saímos com o elefante de louça brincando atrás das agremiações inclusive encontramos com a Turma 
+          da Pitombeira logo depois. Tudo obra do acaso! No ano seguinte o mesmo grupo e tantos outros 
+          amigos saíram, sem a intenção de formar agremiações, com as camisas do time do Bonfim (vermelhas e 
+          brancas), mas em 1952 é que surge Elefante com uma fantasia de agave imitando índios com 
+          Melquíades no saxofone e Faneca no violão.
+        </p>
+        <template v-slot:modal-footer>
+        <div class="w-100">
+          <p class="float-right">Fonte: facebook/Olinda de antigamente</p>
+        </div>
+      </template>
+      </b-modal>
       <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
@@ -236,6 +268,7 @@ li {
 }
 
 .gallery-item {
+  cursor: pointer;
   margin-top: 1%;
   border: 2px solid white;
   border-radius: 10px;
@@ -247,6 +280,10 @@ li {
 
 .smart-gallery {
   max-width: 240px;
+}
+
+.modal-img {
+  max-width: 100%;
 }
 
 .midia {
