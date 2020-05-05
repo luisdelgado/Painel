@@ -85,14 +85,20 @@
         </div>
       </template>
       </b-modal>
-      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
+      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" 
+        width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
-      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
+      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" 
+        width="560" height="315" src="https://www.youtube.com/embed/FSq37fLQPmU" frameborder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
-      <img v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" v-b-tooltip.hover title="Foto: Bobby Fabisak/JC Imagem (2020)" src="./../assets/nino.jpg" />
-      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
+      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" 
+        width="560" height="315" src="https://www.youtube.com/embed/p3vS_BD1H5I" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" 
+        width="560" height="315" src="https://www.youtube.com/embed/f0CmKyZ8puA" frameborder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
     </div>
