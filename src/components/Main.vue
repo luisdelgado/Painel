@@ -111,7 +111,7 @@
               :interval="4000"
               controls
               indicators
-              background="#ababab"
+              background="#ffffff"
               img-width="100%"
               img-height="290"
               style="text-shadow: 1px 1px 2px #333;"
@@ -124,7 +124,7 @@
                     class="d-block w-80"
                     width="100%"
                     height="310"
-                    src="./../assets/main.jpg"
+                    src="./../assets/paco.jpg"
                     alt="image slot"
                   >
                 </template>
@@ -135,7 +135,40 @@
                     class="d-block w-80"
                     width="100%"
                     height="310"
-                    src="./../assets/main.jpg"
+                    src="./../assets/bruxa.jpg"
+                    alt="image slot"
+                  >
+                </template>
+              </b-carousel-slide>
+              <b-carousel-slide>
+                <template v-slot:img>
+                  <img
+                    class="d-block w-80"
+                    width="100%"
+                    height="310"
+                    src="./../assets/oseas.jpg"
+                    alt="image slot"
+                  >
+                </template>
+              </b-carousel-slide>
+              <b-carousel-slide>
+                <template v-slot:img>
+                  <img
+                    class="d-block w-80"
+                    width="100%"
+                    height="310"
+                    src="./../assets/page.jpg"
+                    alt="image slot"
+                  >
+                </template>
+              </b-carousel-slide>
+              <b-carousel-slide>
+                <template v-slot:img>
+                  <img
+                    class="d-block w-80 mx-auto"
+                    width="auto"
+                    height="310"
+                    src="./../assets/old.jpg"
                     alt="image slot"
                   >
                 </template>
@@ -310,6 +343,10 @@ li {
   border-color: white;
   border-style: solid;
   border-width: 5px;
+}
+
+.standard {
+  background-color: white;
 }
 
 .follow {
