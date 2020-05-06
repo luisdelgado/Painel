@@ -345,10 +345,6 @@ li {
   border-width: 5px;
 }
 
-.standard {
-  background-color: white;
-}
-
 .follow {
   margin-top: 30px;
 }
@@ -366,7 +362,7 @@ li {
   text-align: left;
 }
 
-.listen-title {
-  margin-left: 49px;
-}
+/* .listen-title {
+  margin-left: 1%;
+} */
 </style>
