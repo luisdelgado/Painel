@@ -175,7 +175,7 @@
               </b-carousel-slide>
             </b-carousel>
           </div>
-          <h4 v-bind:class="{'follow': widthScreen > 1024}" class>Siga o Elefante</h4>
+          <p v-bind:class="{'follow': widthScreen > 1024}" class>Siga o Elefante</p>
           <a href="https://instagram.com/elefantedeolinda"><img v-bind:class="{'follow-midia': true}" src="./../assets/instagram.png" /></a>
           <a href="https://www.facebook.com/clubeelefantedeolindah"><img v-bind:class="{'follow-midia': true}" src="./../assets/facebook.png" /></a>
           <a href="https://twitter.com/ElefanteOlinda"><img v-bind:class="{'follow-midia': true}" src="./../assets/twitter.png" /></a>
@@ -183,7 +183,7 @@
           <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow-midia': true}" src="./../assets/youtube.png" /></a>
         </div>
         <div v-bind:class="{'section-row': true, 'col-lg-4 offset-1 justify-content-between listen': widthScreen > 1024}">
-          <h4 class="listen-title">O Elefante é frevo!</h4>
+          <p class="listen-title"><i>O Elefante é frevo!</i></p>
           <iframe src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
@@ -346,7 +346,10 @@ li {
 }
 
 .follow {
+  font: 700 15px Fugaz One !important;
+  letter-spacing: 2px;
   margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .follow-midia {
@@ -362,7 +365,8 @@ li {
   text-align: left;
 }
 
-/* .listen-title {
-  margin-left: 1%;
-} */
+.listen-title {
+  font: 400 15px Fugaz One !important;
+  text-align: center;
+}
 </style>
