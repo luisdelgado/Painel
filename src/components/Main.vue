@@ -111,7 +111,7 @@
               :interval="4000"
               controls
               indicators
-              background="#ffffff"
+              background="#dddddd"
               img-width="100%"
               img-height="290"
               style="text-shadow: 1px 1px 2px #333;"
