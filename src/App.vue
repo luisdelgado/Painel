@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Main msg="CCM Elefante de Olinda"/>
   </div>
 </template>
 
 <script>
+import Main from './components/Main.vue'
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    Main
+  }
 }
 </script>
 
@@ -17,7 +20,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #A81317;
 }
 </style>
