@@ -3,7 +3,7 @@
     <nav class="navbar">
       <ul class="items">
         <li>
-          <img alt="Elefante logo" src="./../assets/logo.jpg">
+          <img alt="Elefante logo" src="~./../assets/logo.jpg">
         </li>
         <li class="title">
           <h1>{{ msg }}</h1>
