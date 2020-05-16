@@ -44,7 +44,7 @@
           <p>Clídio Nigro / Clóvis Vieira</p>
         </div>
         <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'sound': true, 'smart': widthScreen <= 414}">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0"
+          <iframe width="560" class="hymn-border" height="315" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
