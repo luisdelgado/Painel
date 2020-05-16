@@ -183,7 +183,7 @@
           <a href="https://www.youtube.com/channel/UCSPKBlnw52xd0DEeVoE3bbg"><img v-bind:class="{'follow-midia': true}" src="./../assets/youtube.png" /></a>
         </div>
         <div v-bind:class="{'section-row': true, 'col-lg-4 offset-1 justify-content-between listen': widthScreen > 1024}">
-          <p class="listen-title"><i>O Elefante é frevo!</i></p>
+          <p v-bind:class="{'listen-title': true, 'listen-margin': widthScreen <= 1024}"><i>O Elefante é frevo!</i></p>
           <iframe class="listen-border" src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
@@ -374,6 +374,10 @@ li {
 .listen-title {
   font: 400 15px Fugaz One !important;
   text-align: center;
+}
+
+.listen-margin {
+  margin-top: 5%;
 }
 
 .listen-border {
