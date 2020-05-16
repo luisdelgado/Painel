@@ -3,7 +3,7 @@
     <nav class="navbar">
       <ul class="items">
         <li>
-          <img alt="Elefante logo" src="./static/img/logo.ad87036.jpg">
+          <img alt="Elefante logo" :src="image">
         </li>
         <li class="title">
           <h1>{{ msg }}</h1>
@@ -201,7 +201,8 @@ export default {
     return {
       widthScreen: window.innerWidth,
       slide: 0,
-      sliding: null
+      sliding: null,
+      image: require('@/assets/logo.jpg')
     }
   },
   methods: {
