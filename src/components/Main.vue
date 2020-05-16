@@ -44,8 +44,8 @@
           <p>Clídio Nigro / Clóvis Vieira</p>
         </div>
         <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'sound': true, 'smart': widthScreen <= 414}">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          <iframe class="hymn-border" width="560" height="315" src="https://www.youtube.com/embed/tMa67fMqhyo"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </div>
@@ -184,7 +184,7 @@
         </div>
         <div v-bind:class="{'section-row': true, 'col-lg-4 offset-1 justify-content-between listen': widthScreen > 1024}">
           <p class="listen-title"><i>O Elefante é frevo!</i></p>
-          <iframe src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe class="listen-border" src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
     </div>
@@ -283,6 +283,11 @@ li {
   margin-top: 2%;
 }
 
+.hymn-border {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
 .smart iframe {
   max-width: 100%;
 }
@@ -368,5 +373,11 @@ li {
 .listen-title {
   font: 400 15px Fugaz One !important;
   text-align: center;
+}
+
+.listen-border {
+  border: 2px solid white;
+  border-radius: 10px;
+  border-left: 0px;
 }
 </style>
