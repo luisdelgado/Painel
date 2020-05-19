@@ -52,7 +52,7 @@
     </div>
     <h3>Carnavais Saudosos</h3>
     <div v-bind:class="{'section-row': true, 'row col-lg-12 justify-content-between': widthScreen > 1024}">
-      <img v-b-modal.modal-1 v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" v-b-tooltip.hover title="Fonte: facebook/Olinda de antigamente" src="./../assets/1953.jpg" />
+      <img v-b-modal.modal-1 v-bind:class="{'gallery-item': true, 'col-lg-2 first-gallery-item': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}" src="./../assets/1953.jpg" />
       <b-modal
         id="modal-1"
         title="Lá Vem o Elefante de Olinda, exaltando suas tradições... (1953)"
