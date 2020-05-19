@@ -284,6 +284,10 @@ li {
   margin-top: 2%;
 }
 
+.sound iframe, .listen iframe {
+  border-radius: 10px;
+}
+
 .hymn-border {
   border: 2px solid white;
   border-radius: 10px;
