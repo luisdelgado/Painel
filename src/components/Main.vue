@@ -44,7 +44,7 @@
           <p>Clídio Nigro / Clóvis Vieira</p>
         </div>
         <div v-bind:class="{'col-lg-4': widthScreen > 1024, 'sound': true, 'smart': widthScreen <= 414}">
-          <iframe width="392" class="hymn-border" height="220" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0"
+          <iframe width="392" v-bind:class="{'hymn-border': widthScreen > 1024}" height="220" src="https://www.youtube.com/embed/tMa67fMqhyo" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -184,7 +184,7 @@
         </div>
         <div v-bind:class="{'section-row': true, 'col-lg-4 offset-1 justify-content-between listen': widthScreen > 1024}">
           <p v-bind:class="{'listen-title': true, 'listen-margin': widthScreen <= 1024}"><i>O Elefante é frevo!</i></p>
-          <iframe class="listen-border" src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe  v-bind:class="{'listen-border': widthScreen > 1024}" src="https://open.spotify.com/embed/playlist/5fihaW6ACiFcLlFW1EAyWL" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
     </div>
@@ -385,13 +385,5 @@ li {
   border: 2px solid white;
   border-radius: 10px;
   border-left: 0px;
-}
-
-.sound iframe {
-  border: 0;
-}
-
-.listen iframe {
-  border: 0;
 }
 </style>
