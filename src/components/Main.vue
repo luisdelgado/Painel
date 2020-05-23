@@ -326,6 +326,7 @@ li {
 
 .smart-gallery {
   max-width: 240px;
+  min-width: 240px;
 }
 
 .modal-img {
