@@ -355,7 +355,7 @@ li {
 .follow {
   font: 700 15px Fugaz One !important;
   letter-spacing: 2px;
-  margin-top: 30px;
+  margin-top: 75px;
   margin-bottom: 0px;
 }
 
