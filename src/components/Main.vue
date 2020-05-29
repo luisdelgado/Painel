@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="main">
     <nav class="navbar">
       <ul class="items">
         <li>
@@ -201,8 +201,7 @@ export default {
     return {
       widthScreen: window.innerWidth,
       slide: 0,
-      sliding: null,
-      image: require('@/assets/logo.jpg')
+      sliding: null
     }
   },
   methods: {

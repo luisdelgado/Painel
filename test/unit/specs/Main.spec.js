@@ -1,11 +1,20 @@
-import Vue from 'vue'
 import Main from '@/components/Main'
+import { shallowMount } from '@vue/test-utils'
 
 describe('Main.vue', () => {
   it('should render correct contents', () => {
-    const Constructor = Vue.extend(Main)
-    const vm = new Constructor().$mount()
-    // expect(vm.$el.querySelector('.hello h1').textContent)
-    //   .toEqual('CCM Elefante de Olinda')
+
+    // given
+    const wrapper = shallowMount(Main, {
+      propsData: {
+        msg: 'CCM Elefante de Olinda',
+      },
+    });
+
+    // when
+    const title = wrapper.find('.title h1').text();
+
+    // then
+    expect(title).toContain('CCM Elefante de Olinda');
   })
 })
