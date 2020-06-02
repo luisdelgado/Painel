@@ -1,7 +1,6 @@
 # painel
 
-> A Vue.js project
-> Página com estudos iniciais em Vue.js usando o Elefante de Olinda como tema.
+> A Vue.js project. Página com estudos iniciais em Vue.js usando o Elefante de Olinda como tema.
 
 ## Build Setup
 
