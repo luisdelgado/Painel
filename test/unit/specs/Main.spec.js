@@ -7,7 +7,7 @@ describe('Main.vue', () => {
     // given
     const wrapper = shallowMount(Main, {
       propsData: {
-        msg: 'CCM Elefante de Olinda',
+        title: 'CCM Elefante de Olinda',
       },
     });
 

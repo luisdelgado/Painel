@@ -6,7 +6,7 @@
           <img alt="Elefante logo" src="./../assets/logo.jpg">
         </li>
         <li class="title">
-          <h1>{{ msg }}</h1>
+          <h1>{{ title }}</h1>
         </li>
       </ul>
     </nav>
@@ -195,7 +195,7 @@
 export default {
   name: 'Main',
   props: {
-    msg: String
+    title: String
   },
   data () {
     return {
