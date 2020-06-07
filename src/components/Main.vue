@@ -80,10 +80,10 @@
           Melquíades no saxofone e Faneca no violão.
         </p>
         <template v-slot:modal-footer>
-        <div class="w-100">
-          <p class="float-right">Fonte: facebook/Olinda de antigamente</p>
-        </div>
-      </template>
+          <div class="w-100">
+            <p class="float-right">Fonte: facebook/Olinda de antigamente</p>
+          </div>
+        </template>
       </b-modal>
       <iframe v-bind:class="{'gallery-item': true, 'col-lg-2': widthScreen > 1024, 'smart-gallery': widthScreen <= 1024}"
         width="560" height="315" src="https://www.youtube.com/embed/5fonu7btiT4?start=68"
